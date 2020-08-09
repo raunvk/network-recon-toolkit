@@ -3,6 +3,7 @@
 Network Scanning & Reconnaissance
 
 1. Install requirements.txt to install necessary packages
+   [python3 -m pip install -r requirements.txt]  
 
 2. Run passgen.py to generate wordlist
 
