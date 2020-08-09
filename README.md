@@ -1,4 +1,4 @@
-# digital-recon-toolkit
+# network-recon-toolkit
 
 Network Scanning & Reconnaissance
 
