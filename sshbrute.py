@@ -33,7 +33,7 @@ def connect (target, username, passwd):
         if (fails > 5):
             print ("Too many Socket Timeouts :(")
             exit(0)
-        elif 'read_nonblocking' in str(e):172.18.75
+        elif 'read_nonblocking' in str(e):
             fails += 1
             time.sleep(5)
             return connect(target, username, passwd)
