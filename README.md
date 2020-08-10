@@ -8,7 +8,7 @@ Network Scanning & Reconnaissance
 
 3. Run scanme.py to scan target IP address
 
-4. Run ftpbrute.py to crack FTP open ports
+4. Run ftpbrute.py to crack gateway FTP open ports
 
 5. Run sshbrute.py to crack SSH open ports
 
