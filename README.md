@@ -6,7 +6,7 @@ Network Scanning & Reconnaissance
 
 2. Run passgen.py to generate wordlist
 
-3. Run scanme.py to scan target IP address(es)
+3. Run scanme.py to scan target IP address
 
 4. Run ftpbrute.py to crack FTP open ports
 
