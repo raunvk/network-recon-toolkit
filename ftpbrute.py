@@ -15,9 +15,9 @@ except IOError:
 	print('Banner File not found!\n')
 
 
-gateway = input("Enter Gateway Address: ")
+gateway = input("Enter Gateway address: ")
 print("\n")
-name = input("Enter gateway name: ")
+name = input("Enter Gateway name: ")
 print("\n")
 wordlist = input("Enter wordlist filepath: ")
 print("\n")
