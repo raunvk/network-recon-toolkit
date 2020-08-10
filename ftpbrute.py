@@ -1,5 +1,3 @@
-
-
 import ftplib
 
 class bcolors:
