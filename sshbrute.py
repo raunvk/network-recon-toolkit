@@ -27,7 +27,7 @@ def connect (target, username, passwd):
         s.login(target, username, passwd)
         print("Password Found :D\n")
         print("Password is: " + passwd)
-	print("\n")
+        print("\n")
         return s
 
     except Exception as e:
