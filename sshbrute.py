@@ -58,7 +58,7 @@ def Main():
     if (target and username and wordlist):
         with open(wordlist, 'r') as passfile:
             for passwd in passfile:
-                print("[-] Trying: " + passwd)
+                print("[-] Passsword Trying...." + passwd)
                 con = connect(target, username, passwd)
                 if con:
                     flag = 1
