@@ -1,3 +1,5 @@
+
+
 import ftplib
 
 class bcolors:
@@ -12,19 +14,22 @@ try:
 	print (bcolors.OKGREEN + file1.read() + bcolors.ENDC)
 	file1.close()
 except IOError:
-	print('\nBanner File not found!')
+	print('Banner File not found!\n')
 
 
 target = input("Enter target IP Address: ")
+print("\n")
 username = input("Enter target Username: ")
+print("\n")
 wordlist = input("Enter wordlist filepath: ")
+print("\n")
 
 flag = 0
 
 try:
     passfile = open(wordlist, "r")
 except:
-    print("No file found !")
+    print("No file found !\n")
     quit()
 
 for passwd in passfile:
@@ -40,8 +45,12 @@ for passwd in passfile:
         print("[-] Password Trying...{0}".format(passwd))
 
 if (flag == 0):
-    print ("Password not found :(")
-    print ("Please modify your wordlist !")
+    print ("Password not found :(\n")
+    print ("Please modify your wordlist !\n")
+
+
+
+
 
 
 
