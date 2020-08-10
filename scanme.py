@@ -26,8 +26,13 @@ print("\n")
 if (response=='1'):
 	print("NMAP Version:\t ", scanner.nmap_version())
 	print("Scanning:\t ",target)
+	print("Please Wait !\n")
 	scanner.scan(target, '1-1000', '-v -sS')
-	print("Hostname:\t ", scanner[target].hostname())
+	hostname = scanner[target].hostname()
+	if (hostname == ""):
+		print("Hostname:\tUnknown")
+	else:
+		print("Hostname:\t", hostname)
 	print("State:\t ", scanner[target].state())
 	print("Scan Info:\t ", scanner.scaninfo())
 	print("Protocol(s):\t ", scanner[target].all_protocols())
@@ -37,13 +42,20 @@ if (response=='1'):
 		for port in lport:
 			print('Port:\t ', port)
 			print('State:\t ', scanner[target][proto][port]['state'])
+		print("\n")
+
 
 
 elif (response=='2'):
 	print("NMAP Version:\t ", scanner.nmap_version())
 	print("Scanning:\t ", target)
+	print("Please Wait !\n")
 	scanner.scan(target, '1-1000', '-v -sU')
-	print("Hostname:\t ", scanner[target].hostname())
+	hostname = scanner[target].hostname()
+	if (hostname == ""):
+		print("Hostname:\tUnknown")
+	else:
+		print("Hostname:\t", hostname)
 	print("State:\t ", scanner[target].state())
 	print("Scan Info:\t ", scanner.scaninfo())
 	print("Protocol(s):\t ", scanner[target].all_protocols())
@@ -53,14 +65,20 @@ elif (response=='2'):
 		for port in lport:
 			print('Port:\t ', port)
 			print('State:\t ', scanner[target][proto][port]['state'])
+		print("\n")
 
 
 
 elif (response=='3'):
 	print("NMAP Version:\t ", scanner.nmap_version())
 	print("Scanning:\t ", target)
+	print("Please Wait !\n")
 	scanner.scan(target, '1-1000', '-T4 -A -v')
-	print("Hostname:\t ", scanner[target].hostname())
+	hostname = scanner[target].hostname()
+	if (hostname == ""):
+		print("Hostname:\tUnknown")
+	else:
+		print("Hostname:\t", hostname)
 	print("State:\t ", scanner[target].state())
 	print("Scan Info:\t ", scanner.scaninfo())
 	print("Protocol(s):\t ", scanner[target].all_protocols())
@@ -70,6 +88,7 @@ elif (response=='3'):
 		for port in lport:
 			print('Port:\t ', port)
 			print('State:\t ', scanner[target][proto][port]['state'])
+		print("\n")
 
 
 
