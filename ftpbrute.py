@@ -1,18 +1,16 @@
 import ftplib
+from colored import fg, bg, attr
 
-class bcolors:
-	OKGREEN = '\033[92m'
-	WARNING = '\033[93m'
-	FAIL = '\033[91m'
-	ENDC = '\033[0m'
+color = fg('green')
+reset = attr('reset')
 
 try:
 	file1 = open('ftpbrute.txt', 'r')
 	print(' ')
-	print (bcolors.OKGREEN + file1.read() + bcolors.ENDC)
+	print (color + file1.read() + reset)
 	file1.close()
 except IOError:
-	print('Banner File not found!\n')
+	print('\nBanner File not found!')
 
 
 gateway = input("Enter Gateway address: ")
@@ -46,7 +44,6 @@ print("\n")
 if (flag == 0):
     print ("Password not found :(\n")
     print ("Please modify your wordlist !\n")
-
 
 
 
