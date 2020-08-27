@@ -1,6 +1,6 @@
 # network-recon-toolkit
 
-Disclaimer : [USE UNIX-LIKE OS FOR BEST RESULTS]
+Disclaimer : Use Unix-like OS for best results
 
 Description : Network Scanning & Reconnaissance
 
