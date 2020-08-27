@@ -1,19 +1,17 @@
 import string
 import random
+from colored import fg, bg, attr
 
-class bcolors:
-	OKGREEN = '\033[92m'
-	WARNING = '\033[93m'
-	FAIL = '\033[91m'
-	ENDC = '\033[0m'
+color = fg('green')
+reset = attr('reset')
 
 try:
 	file1 = open('passgen.txt', 'r')
 	print(' ')
-	print (bcolors.OKGREEN + file1.read() + bcolors.ENDC)
+	print (color + file1.read() + reset)
 	file1.close()
 except IOError:
-	print('Banner File not found!\n')
+	print('\nBanner File not found!')
 
 
 s1 = string.ascii_lowercase
@@ -42,4 +40,3 @@ for i in range(1,50):
 	x = open(name1,'a')
 	print("".join(random.sample(s,l)),file = x)
 	x.close()
-
