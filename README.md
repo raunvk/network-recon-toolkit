@@ -1,4 +1,4 @@
-# network-recon-toolkit
+# network-recon-script
 
 Disclaimer : Use Unix-like OS for best results
 
