@@ -2,7 +2,7 @@
 
 **Description** : Network Scanning & Reconnaissance
 
-**Disclaimer** : Make sure you have Python3 installed in your System
+**Requisite** : Make sure you have Python3 installed in your System
 
 **For Unix-like OS** :
 
