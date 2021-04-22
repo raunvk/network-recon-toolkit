@@ -12,8 +12,8 @@
 
 3. Run scanme.py to scan target IP address [**$ python3 scanme.py**]
 
-4. Run ftpbrute.py to crack gateway FTP open ports [**$ python3 ftpbrute.py**]
+4. Run ftpbrute.py to crack FTP open ports using bruteforce [**$ python3 ftpbrute.py**]
 
-5. Run sshbrute.py to crack SSH open ports [**$ python3 sshbrute.py**]
+5. Run sshbrute.py to crack SSH open ports using bruteforce [**$ python3 sshbrute.py**]
  
 
