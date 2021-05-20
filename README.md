@@ -1,6 +1,6 @@
 # network-recon-toolkit
 
-**Description** : Network Scanning & Reconnaissance
+**Description** : Network Scanning & Reconnaissance Tools
 
 **Requisite** : Make sure you have Python3 and Pip installed in your System
 
