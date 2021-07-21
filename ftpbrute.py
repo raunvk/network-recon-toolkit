@@ -13,9 +13,9 @@ except IOError:
 	print('\nBanner File not found!')
 
 
-gateway = input("Enter Gateway address: ")
+gateway = input("Enter Target IP Address: ")
 print("\n")
-name = input("Enter Gateway name: ")
+name = input("Enter Target Username: ")
 print("\n")
 wordlist = input("Enter wordlist filepath: ")
 print("\n")
@@ -44,13 +44,3 @@ print("\n")
 if (flag == 0):
     print ("Password not found :(\n")
     print ("Please modify your wordlist !\n")
-
-
-
-
-
-
-
-
-
-
