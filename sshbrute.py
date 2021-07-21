@@ -44,9 +44,9 @@ def connect (target, username, passwd):
 
 def Main():
 
-    target = input("Enter target IP Address: ")
+    target = input("Enter Target IP Address: ")
     print("\n")
-    username = input("Enter target Username: ")
+    username = input("Enter Target Username: ")
     print("\n")
     wordlist = input("Enter wordlist filepath: ")
     print("\n")
