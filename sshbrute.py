@@ -8,7 +8,7 @@ color = fg('green')
 reset = attr('reset')
 
 try:
-	file1 = open('sshbrute.txt', 'r')
+	file1 = open('sshbrute-header.txt', 'r')
 	print(' ')
 	print (color + file1.read() + reset)
 	file1.close()
