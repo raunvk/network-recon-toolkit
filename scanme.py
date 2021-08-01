@@ -5,7 +5,7 @@ color = fg('green')
 reset = attr('reset')
 
 try:
-	file1 = open('scanme.txt', 'r')
+	file1 = open('scanme-header.txt', 'r')
 	print(' ')
 	print (color + file1.read() + reset)
 	file1.close()
